@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/footer.css";
 import Image from "next/image";
+import Link from 'next/link'
 
 function Footer() {
   return (
@@ -38,11 +39,11 @@ function Footer() {
         </div>
         <div className="f-2">
           <h1>More Detail</h1>
-          <a href="">Home</a>
-          <a href="">About</a>
-          <a href="">Serviecs</a>
-          <a href="">Gallery</a>
-          <a href="">Contact</a>
+          <Link href="/">Home</Link>
+          <Link href="/about">About</Link>
+          <Link href="/services">Serviecs</Link>
+          <Link href="/gallery">Gallery</Link>
+          <Link href="/contact">Contact</Link>
         </div>
         <div className="f-3">
           <h1>Location</h1>
