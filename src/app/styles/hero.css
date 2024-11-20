@@ -1,0 +1,164 @@
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    flex-wrap: wrap;
+}
+
+.conteint {
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.conteint::first-letter {
+    font-size: 2em;
+}
+
+.s {
+    font-size: 2em;
+}
+
+.hair {
+    color: #a22a2a90;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.199);
+}
+
+.hero-img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin-left: 50px;
+}
+
+.discount {
+    margin-top: 50px;
+    font-size: 35px;
+    display: flex;
+    position: relative;
+    top: 50px;
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.d-1, .d-2 {
+    background-color: brown;
+    border-radius: 50%;
+    padding: 15px 50px;
+    margin: 10px;
+    transition: 500ms;
+}
+
+.d-1:hover, .d-2:hover {
+    padding: 25px 70px;
+    font-size: 40px;
+}
+
+.hairStyle {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+}
+
+.style-2 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.style-5 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.style-1 {
+    margin-top: -35px;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.style-4 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.hairs {
+    width: 100%;
+    height: auto;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+.hairs:hover {
+    opacity: 1;
+    transform: scale(0.98);
+}
+
+@media (max-width: 992px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-img {
+        margin-left: 0;
+    }
+
+    .discount {
+        font-size: 30px;
+        top: 20px;
+    }
+
+    .hairStyle {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .discount {
+        font-size: 25px;
+        flex-direction: column;
+        top: 0;
+    }
+
+    .d-1, .d-2 {
+        padding: 10px 30px;
+        font-size: 18px;
+    }
+
+    .hairStyle {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .conteint {
+        font-size: 18px;
+    }
+
+    .hero-img {
+        max-width: 300px;
+    }
+
+    .discount {
+        font-size: 20px;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .d-1, .d-2 {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    .hairStyle {
+        grid-template-columns: 1fr;
+    }
+}
